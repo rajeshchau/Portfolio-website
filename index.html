@@ -28,6 +28,8 @@
             display: flex;
             justify-content: center;
             text-align: center;
+            
+            
         }
         .nav__list {
             margin-right: 70px;
@@ -161,27 +163,82 @@
           text-align: center;
           margin-top: 20%;
       }
+
+
+
+
+
+
+      .study-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .study {
+        flex: 0 0 calc(50% - 10px); /* Two items per row */
+        margin-bottom: 20px;
+    }
+    
+    /* Media query for tablets */
+    @media (max-width: 768px) {
+        .study {
+            flex: 0 0 calc(50% - 10px); /* Two items per row */
+        }
+        #photoo{
+          margin-left: 10%;
+          margin-bottom: 15%;
+        }
+        
+
+
+    }
+    
+    /* Media query for phones */
+    @media (max-width: 576px) {
+        .study {
+            flex: 0 0 calc(100% - 10px); /* One item per row */
+        }
+        #photoo{
+          margin-left: 10%;
+          margin-bottom: 15%;
+        }
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+
       
     </style>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="container">
-            <header class="d-flex justify-content-center py-3">
-              <ul class="nav nav-pills">
+  <div class="top-bar">
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills flex-row flex-sm-row">
                 <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#learning" class="nav-link">KNOWLEDGE</a></li>
                 <li class="nav-item"><a href="#studying" class="nav-link">EDUCATION</a></li>
                 <li class="nav-item"><a href="#made" class="nav-link">PROJECTS</a></li>
-                <li class="nav-item"><a href="#call" class="nav-link">CONTECT</a></li>
-              </ul>
-            </header>
-          </div>
-          </div>
-          <div class="profile">
+                <li class="nav-item"><a href="#call" class="nav-link">CONTACT</a></li>
+            </ul>
+        </header>
+    </div>
+</div>
+
+
+          <div class="profile"> 
           <div class="main col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center">
-              <div class="col-10 col-sm-8 col-lg-6">
+              <div class="col-10 col-sm-8 col-lg-6" id="photoo">
                 <img src="./assets/WhatsApp Image 2024-03-30 at 10.54.56_e59a0209.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
               </div>
               <div class="col-lg-6">
@@ -279,46 +336,36 @@
             </div>
         </div>
 
-<div class="album py-5 bg-body-tertiary">
-                    <div class="container" id="studying">
-                        <h2 class="projects"><b><u>
-                            EDUCATION
-                        </u></b>
-                        </h2>
-                
-                      <div class="study row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                          <div class="card-1 shadow-sm">
-                            <img class="education" src="./assets/download.jpeg" alt="sigv">
-                            <h2>SIGV SCHOOL</h2>
-                            <h4>CHIKHALI</h4>
-                            <div class="card-body">
-                              <p class="card-text">Hey this is my school where i studyed and advanced my  knowledge in programming.</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://sigvschool.com/">View</a></button>
-                                </div>
-                              </div>
-                            </div>
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+              <h2 class="projects"><u>EDUCATION</u></h2>
+              <div class="study-container">
+                  <div class="study">
+                      <div class="card shadow-sm">
+                          <img class="card-img-top" src="./assets/download.jpeg" alt="SIGV School">
+                          <div class="card-body">
+                              <h5 class="card-title">SIGV SCHOOL</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">CHIKHALI</h6>
+                              <p class="card-text">Hey, this is my school where I studied and advanced my knowledge in programming.</p>
+                              <a href="http://sigvschool.com/" class="btn btn-sm btn-outline-secondary" target="_blank">View</a>
                           </div>
-                        </div>
-                        <div class="col">
-                          <div class="card-1 shadow-sm">
-                            <img class="education" src="./assets/images.jpeg" alt="parul">
-                            <h2>PARUL UNIVERSITY</h2>
-                            <h4>VADODARA</h4>
-                            <div class="card-body">
-                              <p class="card-text">Hey this is the university where i have my imca degree and learn many things.</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://paruluniversity.ac.in/">View</a></button>
-                                </div>
-                              </div>
-                            </div>
+                      </div>
+                  </div>
+                  <div class="study">
+                      <div class="card shadow-sm">
+                          <img class="card-img-top" src="./assets/images.jpeg" alt="Parul University">
+                          <div class="card-body">
+                              <h5 class="card-title">PARUL UNIVERSITY</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">VADODARA</h6>
+                              <p class="card-text">Hey, this is the university where I obtained my IMCA degree and learned many things.</p>
+                              <a href="https://paruluniversity.ac.in/" class="btn btn-sm btn-outline-secondary" target="_blank">View</a>
                           </div>
-                        </div>
-                       
-                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 
 
 
